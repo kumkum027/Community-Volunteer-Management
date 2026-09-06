@@ -1,86 +1,118 @@
 # 🌍 Volunteer Connect
 
-A full-stack volunteer management platform that connects volunteers with organizations, simplifies event discovery and registration, and provides organizations with tools to manage events and participants.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=850&height=55&lines=Connecting+Volunteers+With+Purpose;Full-Stack+Volunteer+Management+Platform;React+%7C+Node.js+%7C+Express.js+%7C+MongoDB" alt="Typing SVG" />
+</p>
 
 <p align="center">
+  A full-stack volunteer management platform that connects volunteers with organizations,
+  simplifies event discovery and registration, and helps organizations manage events and participants.
+</p>
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://volunteer-connect-fawn.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge\&logo=github)](https://github.com/kumkum027/Community-Volunteer-Management)
-[![React](https://img.shields.io/badge/React.js-Frontend-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge\&logo=node.js\&logoColor=white)](https://nodejs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)](https://www.mongodb.com/)
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge\&logo=vercel)](https://vercel.com/)
+<p align="center">
+  <a href="https://volunteer-connect-fawn.vercel.app/">
+    <img src="https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Project-success?style=for-the-badge" alt="Live Demo"/>
+  </a>
+  <a href="https://github.com/kumkum027/Community-Volunteer-Management">
+    <img src="https://img.shields.io/badge/💻%20GitHub-Repository-black?style=for-the-badge&logo=github" alt="GitHub"/>
+  </a>
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/React.js-Frontend-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=flat-square&logo=node.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Express.js-REST_API-000000?style=flat-square&logo=express"/>
+  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Vercel-Deployed-black?style=flat-square&logo=vercel"/>
 </p>
 
 ---
 
-## 🚀 What is Volunteer Connect?
+## 🚀 Project Snapshot
 
-Volunteer Connect is a full-stack MERN application designed to simplify the way volunteers discover opportunities and organizations manage community events.
+| Area              | Implementation                        |
+| ----------------- | ------------------------------------- |
+| 🎯 Purpose        | Volunteer and organization management |
+| 🖥️ Frontend      | React.js + Vite + Tailwind CSS        |
+| ⚙️ Backend        | Node.js + Express.js                  |
+| 🗄️ Database      | MongoDB + Mongoose                    |
+| 🔐 Authentication | JWT + bcrypt                          |
+| 🔄 API            | RESTful APIs                          |
+| 👥 Access         | Volunteer + Organization roles        |
+| ☁️ Deployment     | Vercel + MongoDB Atlas                |
+| 👨‍💻 Team        | Kumkum & Rudra Pratap Shukla          |
 
-The platform provides two main experiences:
+---
 
-### 🙋 Volunteer
+## ✨ What is Volunteer Connect?
+
+**Volunteer Connect** is a full-stack MERN application designed to simplify the way volunteers discover community opportunities and organizations manage events.
+
+The platform provides two connected experiences.
+
+### 🙋 Volunteer Experience
 
 * Create and manage a profile
 * Discover available events
 * View event details
 * Register for events
 * Track participation
+* Manage personal information
 
-### 🏢 Organization
+### 🏢 Organization Experience
 
 * Create an organization profile
 * Create volunteer opportunities
-* Manage events
+* Create and manage events
 * Update event information
 * Delete events
 * View registrations
 * Manage participants
 
-The application uses REST APIs to connect the React frontend with the Node.js and Express.js backend.
-
 ---
 
-## 🎯 Problem Statement
+# 🎯 Problem → Solution
 
-Community organizations often depend on spreadsheets, forms, emails, and messaging platforms to manage volunteers and events.
+Traditional volunteer coordination often depends on spreadsheets, forms, emails, and messaging platforms.
 
-This can lead to:
+This can create:
 
 * Manual participant management
 * Scattered volunteer information
 * Difficult event tracking
 * Repeated administrative work
-* Limited visibility into registrations
-* Poor coordination between volunteers and organizations
+* Limited registration visibility
+* Poor volunteer-organization coordination
 
-### 💡 Our Solution
-
-Volunteer Connect provides a centralized platform where:
+### 💡 Our Approach
 
 ```text
-Organizations
-     │
-     ├── Create Events
-     ├── Manage Events
-     └── Manage Registrations
-     │
-     ▼
-Volunteer Connect
-     │
-     ├── Discover Opportunities
-     ├── Register for Events
-     └── Track Participation
-     │
-     ▼
-Community Impact
+┌───────────────────────┐
+│     ORGANIZATION      │
+│                       │
+│  Create Events        │
+│  Manage Events        │
+│  Manage Registrations │
+└───────────┬───────────┘
+            │
+            ▼
+┌────────────────────────────┐
+│      VOLUNTEER CONNECT     │
+│                            │
+│  Discover Opportunities    │
+│  Register For Events       │
+│  Track Participation       │
+└────────────┬───────────────┘
+             │
+             ▼
+┌───────────────────────┐
+│   COMMUNITY IMPACT    │
+└───────────────────────┘
 ```
 
 ---
 
-# ✨ Key Features
+# ⚡ Key Features
 
 ## 🔐 Authentication & Authorization
 
@@ -92,146 +124,138 @@ Community Impact
 * Role-based access control
 * Separate volunteer and organization workflows
 
----
-
 ## 🙋 Volunteer Dashboard
 
 Volunteers can:
 
-* Create and update their profile
-* Browse available opportunities
-* View complete event information
+* Create and update profiles
+* Browse opportunities
+* View event information
 * Register for events
 * Track joined events
 * Manage personal information
-
----
 
 ## 🏢 Organization Dashboard
 
 Organizations can:
 
-* Create an organization profile
+* Create organization profiles
 * Publish volunteer opportunities
 * Create events
 * Update event details
 * Delete events
-* View volunteer registrations
+* View registrations
 * Manage participants
-
----
 
 ## 📅 Event Management
 
-The application implements CRUD functionality for event management.
+The application supports complete CRUD operations:
 
 ```text
-CREATE
-  ↓
-READ
-  ↓
-UPDATE
-  ↓
-DELETE
+       CREATE
+          │
+          ▼
+        READ
+          │
+          ▼
+       UPDATE
+          │
+          ▼
+       DELETE
 ```
-
-Organizations can manage the event lifecycle while volunteers interact with available opportunities.
-
----
 
 ## 📱 Responsive Interface
 
-The frontend is designed to work across:
+Designed for:
 
 * 💻 Desktop
 * 📱 Mobile
 * 📟 Tablet
 
-Reusable React components and Tailwind CSS are used to maintain a consistent interface.
+Reusable React components and Tailwind CSS help maintain a consistent interface.
 
 ---
 
-# 🧠 Core Engineering Concepts
+# 🧠 Engineering at a Glance
 
-| Concept              | Implementation            |
-| -------------------- | ------------------------- |
-| Frontend Development | React.js + Vite           |
-| UI Development       | Tailwind CSS              |
-| Routing              | React Router DOM          |
-| API Communication    | Axios                     |
-| Backend              | Node.js + Express.js      |
-| API Architecture     | RESTful APIs              |
-| Database             | MongoDB                   |
-| ODM                  | Mongoose                  |
-| Authentication       | JWT                       |
-| Password Security    | bcrypt                    |
-| Authorization        | Role-Based Access Control |
-| CRUD                 | Event Management          |
-| Deployment           | Vercel + MongoDB Atlas    |
-| Version Control      | Git + GitHub              |
+| Engineering Area      | Implementation            |
+| --------------------- | ------------------------- |
+| Frontend Architecture | React.js + Vite           |
+| UI Styling            | Tailwind CSS              |
+| Client Routing        | React Router DOM          |
+| API Communication     | Axios                     |
+| Backend Architecture  | Node.js + Express.js      |
+| API Design            | RESTful APIs              |
+| Database              | MongoDB                   |
+| ODM                   | Mongoose                  |
+| Authentication        | JWT                       |
+| Password Security     | bcrypt                    |
+| Authorization         | Role-Based Access Control |
+| Data Operations       | CRUD                      |
+| Deployment            | Vercel + MongoDB Atlas    |
+| Version Control       | Git + GitHub              |
 
 ---
 
 # 🏗️ System Architecture
 
 ```text
-                    VOLUNTEER CONNECT
-                           │
-                           ▼
-                ┌─────────────────────┐
-                │    React + Vite     │
-                │      Frontend       │
-                └──────────┬──────────┘
-                           │
-                         Axios
-                           │
-                           ▼
-                ┌─────────────────────┐
-                │     Express.js      │
-                │      REST API       │
-                └──────────┬──────────┘
-                           │
-                    JWT Middleware
-                           │
-                           ▼
-                ┌─────────────────────┐
-                │      MongoDB        │
-                │      Mongoose       │
-                └─────────────────────┘
+                     ┌─────────────────────┐
+                     │   VOLUNTEER CONNECT │
+                     └──────────┬──────────┘
+                                │
+                                ▼
+                     ┌─────────────────────┐
+                     │    React + Vite     │
+                     │      Frontend       │
+                     └──────────┬──────────┘
+                                │
+                              Axios
+                                │
+                                ▼
+                     ┌─────────────────────┐
+                     │     Express.js      │
+                     │      REST API       │
+                     └──────────┬──────────┘
+                                │
+                         JWT Middleware
+                                │
+                                ▼
+                     ┌─────────────────────┐
+                     │       MongoDB       │
+                     │      Mongoose       │
+                     └─────────────────────┘
 ```
-
-The repository is organized into separate `frontend` and `backend` applications. The actual repository contains these two top-level application directories.
 
 ---
 
-# 🔄 Application Workflow
+# 🔄 Complete Application Flow
 
 ```text
-              USER REGISTRATION
-                     │
-                     ▼
-                SECURE LOGIN
-                     │
-                     ▼
-             JWT AUTHENTICATION
-                     │
-          ┌──────────┴──────────┐
-          │                     │
-          ▼                     ▼
-   VOLUNTEER ROLE        ORGANIZATION ROLE
-          │                     │
-          ▼                     ▼
- Volunteer Dashboard    Organization Dashboard
-          │                     │
-          ▼                     ▼
-   Browse Events        Create / Manage Events
-          │                     │
-          ▼                     ▼
- Register for Event     Manage Registrations
-          │                     │
-          └──────────┬──────────┘
-                     ▼
-              COMMUNITY IMPACT
+USER REGISTRATION
+       │
+       ▼
+   SECURE LOGIN
+       │
+       ▼
+JWT AUTHENTICATION
+       │
+       ├───────────────────────┐
+       ▼                       ▼
+VOLUNTEER ROLE          ORGANIZATION ROLE
+       │                       │
+       ▼                       ▼
+Volunteer Dashboard     Organization Dashboard
+       │                       │
+       ▼                       ▼
+ Browse Events          Create / Manage Events
+       │                       │
+       ▼                       ▼
+Register for Event      Manage Registrations
+       │                       │
+       └───────────┬───────────┘
+                   ▼
+            COMMUNITY IMPACT
 ```
 
 ---
@@ -239,34 +263,33 @@ The repository is organized into separate `frontend` and `backend` applications.
 # 🔐 Authentication Architecture
 
 ```text
-                    User
-                     │
-                     ▼
-               Login / Register
-                     │
-                     ▼
-              Backend Validation
-                     │
-                     ▼
-             Password Verification
-                     │
-                     ▼
-                  JWT Token
-                     │
-                     ▼
-            Authenticated Request
-                     │
-                     ▼
-                JWT Middleware
-                     │
-              ┌──────┴──────┐
-              │             │
-              ▼             ▼
-         Volunteer     Organization
-           Access         Access
+                    USER
+                      │
+                      ▼
+              LOGIN / REGISTER
+                      │
+                      ▼
+             BACKEND VALIDATION
+                      │
+                      ▼
+             PASSWORD VERIFICATION
+                      │
+                      ▼
+                  JWT TOKEN
+                      │
+                      ▼
+            AUTHENTICATED REQUEST
+                      │
+                      ▼
+               JWT MIDDLEWARE
+                      │
+              ┌───────┴───────┐
+              ▼               ▼
+         VOLUNTEER       ORGANIZATION
+           ACCESS           ACCESS
 ```
 
-### Security Layer
+### Security Layers
 
 ```text
 JWT
@@ -294,30 +317,30 @@ Role-Based Access
 
 ```text
 React Component
-      │
-      ▼
-    Axios
-      │
-      ▼
-Express Route
-      │
-      ▼
- Middleware
-      │
-      ▼
- Controller
-      │
-      ▼
-Mongoose Model
-      │
-      ▼
-  MongoDB
-      │
-      ▼
-JSON Response
-      │
-      ▼
-  React UI
+       │
+       ▼
+     Axios
+       │
+       ▼
+ Express Route
+       │
+       ▼
+  Middleware
+       │
+       ▼
+  Controller
+       │
+       ▼
+ Mongoose Model
+       │
+       ▼
+   MongoDB
+       │
+       ▼
+ JSON Response
+       │
+       ▼
+   React UI
 ```
 
 This separation keeps frontend, API, authentication, and database responsibilities organized.
@@ -326,9 +349,9 @@ This separation keeps frontend, API, authentication, and database responsibiliti
 
 # 🧩 Core Modules
 
-## 1. Authentication Module
+### 01 — Authentication Module
 
-Responsible for:
+Handles:
 
 * Registration
 * Login
@@ -338,35 +361,29 @@ Responsible for:
 * Authorization
 * Protected routes
 
----
+### 02 — Volunteer Module
 
-## 2. Volunteer Module
+Handles:
 
-Responsible for:
-
-* Volunteer profile
+* Volunteer profiles
 * Event discovery
 * Event registration
 * Participation tracking
 
----
+### 03 — Organization Module
 
-## 3. Organization Module
+Handles:
 
-Responsible for:
-
-* Organization profile
+* Organization profiles
 * Event creation
 * Event editing
 * Event deletion
 * Registration management
 * Participant coordination
 
----
+### 04 — Event Module
 
-## 4. Event Module
-
-Responsible for:
+Handles:
 
 * Event creation
 * Event retrieval
@@ -375,9 +392,7 @@ Responsible for:
 * Registration
 * Participant tracking
 
----
-
-## 5. Database Module
+### 05 — Database Module
 
 Manages:
 
@@ -452,8 +467,6 @@ Manages:
 
 # 📂 Project Structure
 
-The current repository uses `frontend` and `backend` as the two main application directories.
-
 ```text
 Community-Volunteer-Management/
 │
@@ -496,16 +509,12 @@ Make sure you have:
 * Git
 * MongoDB Atlas account or local MongoDB
 
----
-
 ## 1. Clone Repository
 
 ```bash
 git clone https://github.com/kumkum027/Community-Volunteer-Management.git
 cd Community-Volunteer-Management
 ```
-
----
 
 ## 2. Install Frontend Dependencies
 
@@ -514,11 +523,9 @@ cd frontend
 npm install
 ```
 
----
-
 ## 3. Install Backend Dependencies
 
-Open another terminal and run:
+Open another terminal:
 
 ```bash
 cd Community-Volunteer-Management/backend
@@ -529,7 +536,7 @@ npm install
 
 # 🔑 Environment Variables
 
-Create a `.env` file inside:
+Create:
 
 ```text
 backend/.env
@@ -543,17 +550,13 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
-### ⚠️ Security
-
-Never commit real credentials, API keys, database passwords, or JWT secrets to GitHub.
-
-Use environment variables for sensitive configuration.
+> ⚠️ Never commit real credentials, API keys, database passwords, or JWT secrets to GitHub.
 
 ---
 
 # ▶️ Run Locally
 
-## Start Backend
+### Start Backend
 
 From the `backend` directory:
 
@@ -561,9 +564,7 @@ From the `backend` directory:
 npm run dev
 ```
 
----
-
-## Start Frontend
+### Start Frontend
 
 Open another terminal:
 
@@ -572,7 +573,7 @@ cd Community-Volunteer-Management/frontend
 npm run dev
 ```
 
-Then open the local Vite URL shown in your terminal, normally:
+Then open the Vite URL shown in the terminal, normally:
 
 ```text
 http://localhost:5173
@@ -580,69 +581,83 @@ http://localhost:5173
 
 ---
 
-# 🚀 Deployment
-
-The project uses Vercel for deployment and MongoDB Atlas for cloud database infrastructure.
+# 🚀 Deployment Architecture
 
 ```text
-                    GitHub
-                       │
-                       ▼
-                    Vercel
-                       │
-             ┌─────────┴─────────┐
-             ▼                   ▼
-        React Frontend      Backend API
-                                  │
-                                  ▼
+                 ┌─────────────┐
+                 │   GitHub    │
+                 └──────┬──────┘
+                        │
+                        ▼
+                 ┌─────────────┐
+                 │   Vercel    │
+                 └──────┬──────┘
+                        │
+              ┌─────────┴─────────┐
+              ▼                   ▼
+       React Frontend        Backend API
+                                   │
+                                   ▼
                             MongoDB Atlas
 ```
 
-## 🌐 Live Demo
+### Live Demo
 
-**Volunteer Connect**
+<p align="center">
+  <a href="https://volunteer-connect-fawn.vercel.app/">
+    <img src="https://img.shields.io/badge/🚀%20OPEN%20VOLUNTEER%20CONNECT-Live%20Demo-success?style=for-the-badge" alt="Open Live Demo"/>
+  </a>
+</p>
 
-https://volunteer-connect-fawn.vercel.app/
+**https://volunteer-connect-fawn.vercel.app/**
 
 ---
 
-# 💡 What Makes This Project Valuable?
-
-Volunteer Connect combines several practical software engineering concepts into one full-stack application:
+# 💡 Why This Project Stands Out
 
 ```text
 User Management
-      +
+       +
 Authentication
-      +
+       +
 Role-Based Authorization
-      +
+       +
 RESTful APIs
-      +
-Database Design
-      +
+       +
+Database Integration
+       +
 CRUD Operations
-      +
-Responsive Frontend
-      +
+       +
+Responsive UI
+       +
 Cloud Deployment
-      +
+       +
 Team Collaboration
-      │
-      ▼
+       │
+       ▼
 Production-Style
 Full-Stack Application
 ```
 
-The project demonstrates practical experience with frontend development, backend API design, database integration, authentication, authorization, CRUD operations, deployment, and Git-based collaboration.
+This project demonstrates practical experience with:
+
+* Frontend development
+* Backend API design
+* Database integration
+* Authentication
+* Authorization
+* CRUD operations
+* API integration
+* Deployment
+* Git-based collaboration
 
 ---
 
-# 🌟 Innovation & Future Direction
+# 🌟 Innovation Lab
 
 The current application provides the core volunteer-management infrastructure.
 
-The following ideas are **future enhancements**, not currently implemented features.
+The following concepts are **future enhancements**, not currently implemented features.
 
 ## 🤖 AI Volunteer Matching
 
@@ -658,15 +673,14 @@ Availability
 Location
   +
 Previous Participation
-        ↓
+        │
+        ▼
 Smart Recommendation
 ```
 
----
-
 ## 📊 Community Impact Analytics
 
-Future analytics could track:
+Possible analytics:
 
 * Volunteer participation
 * Event participation trends
@@ -675,23 +689,20 @@ Future analytics could track:
 * Event completion
 * Community contribution trends
 
----
-
 ## 🔔 Smart Notifications
-
-Possible future workflow:
 
 ```text
 New Event
-    ↓
+    │
+    ▼
 Matching Volunteers
-    ↓
+    │
+    ▼
 Notification
-    ↓
+    │
+    ▼
 Volunteer Registration
 ```
-
----
 
 ## 🏆 Volunteer Recognition
 
@@ -703,8 +714,6 @@ Future versions could include:
 * Certificates
 * Contribution milestones
 
----
-
 ## 💬 Real-Time Communication
 
 A future communication layer could allow organizations and registered volunteers to communicate through real-time messaging.
@@ -714,90 +723,36 @@ A future communication layer could allow organizations and registered volunteers
 # 🗺️ Development Roadmap
 
 ```text
-                 Volunteer Connect
-                         │
-          ┌──────────────┼──────────────┐
-          ▼              ▼              ▼
-   Authentication   Event System   User Profiles
-          │              │              │
-          └──────────────┼──────────────┘
-                         ▼
-                 Role-Based Access
-                         │
-                         ▼
-                  Cloud Deployment
-                         │
-                         ▼
-                  Future Platform
-                         │
-          ┌──────────────┼──────────────┐
-          ▼              ▼              ▼
-         AI             Chat         Analytics
-      Matching         System        Dashboard
-          │              │              │
-          └──────────────┼──────────────┘
-                         ▼
-                Smart Community
-                   Ecosystem
+                  VOLUNTEER CONNECT
+                          │
+        ┌─────────────────┼─────────────────┐
+        ▼                 ▼                 ▼
+ Authentication      Event System      User Profiles
+        │                 │                 │
+        └─────────────────┼─────────────────┘
+                          ▼
+                  Role-Based Access
+                          │
+                          ▼
+                   Cloud Deployment
+                          │
+                          ▼
+                   Future Platform
+                          │
+             ┌────────────┼────────────┐
+             ▼            ▼            ▼
+            AI           Chat       Analytics
+         Matching       System       Dashboard
+             │            │            │
+             └────────────┼────────────┘
+                          ▼
+                  Smart Community
+                     Ecosystem
 ```
 
 ---
 
-# 📈 GitHub Activity
-
-This repository is maintained collaboratively through Git and GitHub.
-
-### Repository Activity
-
-Track the project through:
-
-* Commits
-* Branches
-* Pull requests
-* Issues
-* Repository contributions
-
-### GitHub Profiles
-
-**Kumkum:**
-https://github.com/kumkum027
-
-**Rudra Pratap Shukla:**
-https://github.com/Rudrapratap0005
-
-> GitHub activity widgets can be added later without presenting artificial project statistics.
-
----
-
-# 👥 Our Team
-
-Volunteer Connect was built collaboratively by two full-stack developers.
-
-| Member              | Role                 | GitHub                                                 |
-| ------------------- | -------------------- | ------------------------------------------------------ |
-| Kumkum              | Full-Stack Developer | [@kumkum027](https://github.com/kumkum027)             |
-| Rudra Pratap Shukla | Full-Stack Developer | [@Rudrapratap0005](https://github.com/Rudrapratap0005) |
-
-## 🤝 Collaboration
-
-Together, we worked across:
-
-* Frontend development
-* Backend development
-* Authentication and authorization
-* REST API integration
-* MongoDB integration
-* Event management
-* CRUD functionality
-* Volunteer workflows
-* Organization workflows
-* Testing and debugging
-* Deployment
-* Overall system integration
-
----
-
-# 🧪 Engineering Practices
+# 📈 Engineering Practices
 
 The project provides practical exposure to:
 
@@ -813,6 +768,34 @@ The project provides practical exposure to:
 * Git version control
 * Cloud deployment
 * Team collaboration
+
+---
+
+# 👥 Team
+
+Volunteer Connect was built collaboratively by **two full-stack developers**.
+
+| Member                  | Role                 | GitHub                                                 |
+| ----------------------- | -------------------- | ------------------------------------------------------ |
+| **Kumkum**              | Full-Stack Developer | [@kumkum027](https://github.com/kumkum027)             |
+| **Rudra Pratap Shukla** | Full-Stack Developer | [@Rudrapratap0005](https://github.com/Rudrapratap0005) |
+
+### 🤝 Collaboration Areas
+
+Together, we worked across:
+
+* Frontend development
+* Backend development
+* Authentication and authorization
+* REST API integration
+* MongoDB integration
+* Event management
+* CRUD functionality
+* Volunteer workflows
+* Organization workflows
+* Testing and debugging
+* Deployment
+* Overall system integration
 
 ---
 
@@ -874,20 +857,18 @@ This project is licensed under the MIT License.
 
 # 🌐 Project Links
 
-| Resource               | Link                                                        |
-| ---------------------- | ----------------------------------------------------------- |
-| 🌐 Live Demo           | https://volunteer-connect-fawn.vercel.app/                  |
-| 💻 GitHub Repository   | https://github.com/kumkum027/Community-Volunteer-Management |
-| 👤 Kumkum              | https://github.com/kumkum027                                |
-| 👤 Rudra Pratap Shukla | https://github.com/Rudrapratap0005                          |
+| Resource               | Link                                                                                          |
+| ---------------------- | --------------------------------------------------------------------------------------------- |
+| 🌐 Live Demo           | [Volunteer Connect](https://volunteer-connect-fawn.vercel.app/)                               |
+| 💻 GitHub Repository   | [Community-Volunteer-Management](https://github.com/kumkum027/Community-Volunteer-Management) |
+| 👤 Kumkum              | [github.com/kumkum027](https://github.com/kumkum027)                                          |
+| 👤 Rudra Pratap Shukla | [github.com/Rudrapratap0005](https://github.com/Rudrapratap0005)                              |
 
 ---
 
 # ⭐ Support
 
 If you find this project useful, consider giving the repository a ⭐ on GitHub.
-
----
 
 <p align="center">
 
